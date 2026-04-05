@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Grovian Resort | Nature Luxury Farmstay, Weddings & One-Night Stay</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover Grovian Resort in Vilangi, Saphale — a nature-luxury farmstay for one-night escapes, family stays, pre-wedding shoots, and destination weddings.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- LOADER -->
+  <div class="loader" aria-hidden="true">
+    <span></span>
+  </div>
+  <div class="bg-grain" aria-hidden="true"></div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="#home" class="logo">Grovian</a>
+
+      <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-links" id="primary-navigation">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#accommodation">Stay</a></li>
+        <li><a href="#wedding">Weddings</a></li>
+        <li><a href="#activities">Experiences</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#explore">Explore</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <a href="booking.html" class="btn-primary nav-book">Book Now</a>
+    </div>
+  </nav>
+
+  <!-- HERO VIDEO -->
+  <section class="hero-video" id="home">
+    <video autoplay muted loop playsinline webkit-playsinline preload="auto" poster="hero.jpeg">
+      <source src="mainvideo.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
+    <div class="video-overlay"></div>
+
+    <div class="nature-badges">
+      <span>Agro Tourism Farmstay Retreat</span>
+    </div>
+
+    <p class="video-hint">Scroll to explore</p>
+  </section>
+
+  <!-- HERO -->
+  <header class="hero reveal" data-parallax="0.04">
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+      <p class="eyebrow">Vilangi · Saphale · Maharashtra</p>
+      <h1>One-Night Luxury Farmstay Crafted for Relaxation, Pre-Wedding Stories & Destination Celebrations</h1>
+      <p>
+        Escape city noise and experience curated comfort in nature. Grovian Resort blends elegant stays,
+        all-inclusive activities, open lawns, and warm hospitality for families, couples, and wedding groups.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="booking.html" class="btn-primary">Check Availability</a>
+        <a href="#wedding" class="btn-outline">Plan Wedding / Pre-Wedding</a>
+      </div>
+
+      <div class="hero-points">
+        <div class="hero-point">
+          <strong data-counter="4.9">0</strong>
+          <span>Average Guest Rating</span>
+        </div>
+        <div class="hero-point">
+          <strong data-counter="1200" data-suffix="+">0</strong>
+          <span>Happy Guest Stays</span>
+        </div>
+        <div class="hero-point">
+          <strong data-counter="18" data-suffix="+">0</strong>
+          <span>Included Activities</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- QUICK BOOKING -->
+  <section class="booking-bar">
+    <form class="booking-container" action="booking.html">
+      <div class="booking-field">
+        <label for="checkin">Check In</label>
+        <input type="date" id="checkin" name="checkin">
+      </div>
+
+      <div class="booking-field">
+        <label for="checkout">Check Out</label>
+        <input type="date" id="checkout" name="checkout">
+      </div>
+
+      <div class="booking-field">
+        <label for="guests">Guests</label>
+        <select id="guests" name="guests">
+          <option>1 Guest</option>
+          <option selected>2 Guests</option>
+          <option>3 Guests</option>
+          <option>4 Guests</option>
+          <option>5 Guests</option>
+          <option>6 Guests</option>
+          <option>7 Guests</option>
+          <option>8 Guests</option>
+          <option>9 Guests</option>
+          <option>10 Guests</option>
+          <option>11 Guests</option>
+          <option>12 Guests</option>
+          <option>13 Guests</option>
+          <option>14 Guests</option>
+          <option>15 Guests</option>
+          <option>16 Guests</option>
+          <option>17 Guests</option>
+          <option>18 Guests</option>
+        </select>
+      </div>
+
+      <div class="booking-field">
+        <label for="stayType">Stay Type</label>
+        <select id="stayType" name="stayType">
+          <option selected>One Night Signature Stay</option>
+          <option>Day Escape</option>
+          <option>Family Farmstay</option>
+          <option>Wedding Group Stay</option>
+        </select>
+      </div>
+
+      <button type="submit" class="booking-btn">Check Availability</button>
+    </form>
+  </section>
+
+  <!-- TRUST STRIP -->
+  <section class="trust-strip reveal">
+    <div class="trust-grid">
+      <article class="trust-card reveal-item">
+        <h3>All-Inclusive Experiences</h3>
+        <p>Activities, nature spaces, and relaxation zones included in your stay.</p>
+      </article>
+      <article class="trust-card reveal-item">
+        <h3>Wedding-Ready Venue</h3>
+        <p>Open lawns, elegant backdrops, and customizable wedding arrangements.</p>
+      </article>
+      <article class="trust-card reveal-item">
+        <h3>Farmstay + Agro Tourism</h3>
+        <p>Authentic countryside atmosphere with premium comfort and hospitality.</p>
+      </article>
+      <article class="trust-card reveal-item">
+        <h3>Direct Assistance</h3>
+        <p>Fast booking support over call and WhatsApp for smooth trip planning.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about reveal" id="about">
+    <div class="about-container about-layout">
+      <div class="about-image" data-parallax="0.02"></div>
+
+      <div class="about-text">
+        <h2>About Grovian Resort</h2>
+        <p>
+          Grovian Resort is a peaceful luxury retreat in Vilangi, Saphale, built for guests who value
+          meaningful time in nature without compromising on comfort and design.
+        </p>
+        <p>
+          From one-night rejuvenation escapes to destination wedding celebrations, we offer flexible
+          spaces, quality accommodation, curated activities, and attentive hosting for every occasion.
+        </p>
+
+        <ul class="about-highlights">
+          <li>Private, serene natural surroundings</li>
+          <li>Ideal for couples, families, and groups</li>
+          <li>Pre-wedding and destination wedding support</li>
+          <li>Farmstay atmosphere with luxury finish</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ACCOMMODATION -->
+  <section class="cottages reveal" id="accommodation">
+    <div class="section-header">
+      <h2>Luxury Stay Options</h2>
+      <p>Choose your ideal space for rest, celebration, and memorable moments.</p>
+    </div>
+
+    <div class="accommodation-grid">
+      <a href="deluxe-cottage.html" class="accommodation-card reveal-item">
+        <div class="accommodation-image">
+          <img src="images_accommodation_deluxe-cottage.jpeg" alt="Delux Room" loading="lazy">
+          <span class="arrow">→</span>
+        </div>
+        <div class="accommodation-info">
+          <h3 class="accommodation-title">Delux Room</h3>
+          <p>Elegant private cottage for couples and small families.</p>
+          <ul>
+            <li>Premium interiors</li>
+            <li>Nature-facing ambience</li>
+            <li>Peaceful privacy</li>
+          </ul>
+          <span class="card-link">Explore Room</span>
+        </div>
+      </a>
+
+      <a href="family-room.html" class="accommodation-card reveal-item">
+        <div class="accommodation-image">
+          <img src="family-room.jpg" alt="Family Room" loading="lazy">
+          <span class="arrow">→</span>
+        </div>
+        <div class="accommodation-info">
+          <h3 class="accommodation-title">Family Room</h3>
+          <p>Spacious comfort designed for family bonding and relaxation.</p>
+          <ul>
+            <li>Comfortable layout</li>
+            <li>Easy access to activities</li>
+            <li>Warm, cozy setting</li>
+          </ul>
+          <span class="card-link">Explore Room</span>
+        </div>
+      </a>
+
+      <a href="dormitory.html" class="accommodation-card reveal-item">
+        <div class="accommodation-image">
+          <img src="dormitory.jpg" alt="Dormitory" loading="lazy">
+          <span class="arrow">→</span>
+        </div>
+        <div class="accommodation-info">
+          <h3 class="accommodation-title">Dormitory</h3>
+          <p>Ideal for larger groups, event teams, and celebration stays.</p>
+          <ul>
+            <li>Group-friendly stay</li>
+            <li>Event convenience</li>
+            <li>Value-packed comfort</li>
+          </ul>
+          <span class="card-link">Explore Dormitory</span>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- WEDDINGS -->
+  <section class="wedding reveal" id="wedding">
+    <div class="wedding-container">
+      <div class="wedding-text">
+        <h2>Destination Weddings at Grovian</h2>
+        <p>
+          Celebrate your wedding in a serene, naturally elegant setting. From intimate ceremonies
+          to full family events, Grovian offers a calm destination with open lawns and thoughtful hosting.
+        </p>
+        <p>
+          We help you shape every celebration phase with flexible setups, comfortable stays,
+          and vendor-friendly planning support.
+        </p>
+
+        <ul class="wedding-features">
+          <li>Ideal for intimate destination weddings</li>
+          <li>Open lawn spaces with nature backdrop</li>
+          <li>Comfortable accommodation for guests</li>
+          <li>Custom event and decor coordination</li>
+        </ul>
+
+        <ul class="wedding-timeline">
+          <li><strong>Step 1:</strong> Venue visit and consultation</li>
+          <li><strong>Step 2:</strong> Package finalization and layout planning</li>
+          <li><strong>Step 3:</strong> Event execution with dedicated support</li>
+        </ul>
+
+        <a href="#contact" class="btn-primary">Enquire Wedding Dates</a>
+      </div>
+
+      <div class="wedding-image" data-parallax="0.03"></div>
+    </div>
+  </section>
+
+  <!-- PRE-WEDDING -->
+  <section class="prewedding reveal">
+    <div class="prewedding-container">
+      <div class="prewedding-gallery">
+        <img src="gallery6.jpg" alt="Pre-wedding setup at resort" loading="lazy">
+        <img src="gallery5.jpg" alt="Evening atmosphere at Grovian" loading="lazy">
+        <img src="gallery2.jpg" alt="Cottage backdrop for photoshoots" loading="lazy">
+      </div>
+
+      <div class="prewedding-text">
+        <h2>Pre-Wedding Shoot Backdrops</h2>
+        <p>
+          Capture cinematic pre-wedding stories with natural textures, golden-hour skies,
+          cottage aesthetics, and evening ambience — all in one destination.
+        </p>
+        <ul>
+          <li>Curated shoot corners with natural framing</li>
+          <li>Sunrise and sunset-friendly visuals</li>
+          <li>Easy crew movement and prep spaces</li>
+          <li>Optional stay extensions for full-day shoots</li>
+        </ul>
+        <a href="#contact" class="btn-outline shoot-package-btn">Get Shoot Package</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ACTIVITIES -->
+  <section class="activities reveal" id="activities">
+    <div class="activities-container">
+      <div class="activities-intro">
+        <h2>Agro Tourism & Signature Experiences</h2>
+        <p>
+          Your stay includes meaningful moments — from calm nature walks to group-friendly activities.
+          Every experience is designed to balance relaxation and engagement.
+        </p>
+      </div>
+
+      <div class="activities-grid">
+        <article class="activity-card reveal-item">
+          <h3>Farmstay Trails</h3>
+          <p>Walk through green surroundings and reconnect with slow living.</p>
+        </article>
+        <article class="activity-card reveal-item">
+          <h3>Outdoor Games</h3>
+          <p>Enjoy group activities ideal for families, teams, and celebrations.</p>
+        </article>
+        <article class="activity-card reveal-item">
+          <h3>Campfire Evenings</h3>
+          <p>Relax with music, conversations, and a cozy evening ambience.</p>
+        </article>
+        <article class="activity-card reveal-item">
+          <h3>Family Bonding Zones</h3>
+          <p>Open spaces for kids and adults to spend quality time together.</p>
+        </article>
+        <article class="activity-card reveal-item">
+          <h3>Wedding Event Corners</h3>
+          <p>Flexible areas for pre-functions and celebration moments.</p>
+        </article>
+        <article class="activity-card reveal-item">
+          <h3>Nature Wellness</h3>
+          <p>Unwind in peaceful pockets designed for rest and reflection.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="gallery reveal" id="gallery">
+    <div class="section-header">
+      <h2>Moments at Grovian</h2>
+      <p>Explore stays, nature, events, and wedding-ready aesthetics.</p>
+    </div>
+
+    <div class="gallery-grid">
+      <a href="resort-gallery.html" class="gallery-card reveal-item">
+        <img src="gallery1.jpg" alt="Resort view" loading="lazy">
+        <span class="gallery-overlay">Resort Views</span>
+      </a>
+      <a href="cottage-gallery.html" class="gallery-card reveal-item">
+        <img src="gallery2.jpg" alt="Cottage view" loading="lazy">
+        <span class="gallery-overlay">Cottage Living</span>
+      </a>
+      <a href="nature-gallery.html" class="gallery-card reveal-item">
+        <img src="gallery3.jpg" alt="Nature view" loading="lazy">
+        <span class="gallery-overlay">Nature Trails</span>
+      </a>
+      <a href="activities-gallery.html" class="gallery-card reveal-item">
+        <img src="gallery4.jpg" alt="Activities" loading="lazy">
+        <span class="gallery-overlay">Activities</span>
+      </a>
+      <a href="evening-gallery.html" class="gallery-card reveal-item">
+        <img src="gallery5.jpg" alt="Evening ambiance" loading="lazy">
+        <span class="gallery-overlay">Evening Ambience</span>
+      </a>
+      <a href="events-gallery.html" class="gallery-card reveal-item">
+        <img src="gallery6.jpg" alt="Wedding and event setup" loading="lazy">
+        <span class="gallery-overlay">Events & Weddings</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- EXPLORE NEARBY -->
+  <section class="explore-nearby reveal" id="explore">
+    <div class="section-header">
+      <h2>Explore Nearby</h2>
+      <p>Discover scenic escapes, heritage landmarks, and spiritual spots within easy reach of Grovian Resort.</p>
+    </div>
+
+    <div class="explore-nearby-grid">
+      <article class="explore-card reveal-item">
+        <div class="explore-card-image">
+          <img src="bhavangad fort.jpeg" alt="Bhavangad Fort with hill views and historic stone remains" loading="lazy">
+        </div>
+        <div class="explore-card-content">
+          <h3>Bhavangad Fort</h3>
+          <div class="explore-meta">
+            <span data-explore-distance><span class="explore-meta-icon">📍</span> Calculating distance...</span>
+            <span data-explore-time><span class="explore-meta-icon">⏱</span> Calculating drive time...</span>
+          </div>
+          <p>A historic hill fort destination known for rugged stone pathways, panoramic views, and heritage exploration.</p>
+          <button
+            type="button"
+            class="explore-view-btn"
+            data-explore-id="bhavangad-fort">
+            View More
+          </button>
+        </div>
+      </article>
+
+      <article class="explore-card reveal-item">
+        <div class="explore-card-image">
+          <img src="kelva beach 1.jpeg" alt="Kelwa Beach shoreline with sea breeze and open coast" loading="lazy">
+        </div>
+        <div class="explore-card-content">
+          <h3>Kelwa Beach</h3>
+          <div class="explore-meta">
+            <span data-explore-distance><span class="explore-meta-icon">📍</span> Calculating distance...</span>
+            <span data-explore-time><span class="explore-meta-icon">⏱</span> Calculating drive time...</span>
+          </div>
+          <p>A long sandy shoreline known for sunset walks, local snacks, and laid-back coastal atmosphere near Saphale.</p>
+          <button
+            type="button"
+            class="explore-view-btn"
+            data-explore-id="kelwa-beach">
+            View More
+          </button>
+        </div>
+      </article>
+
+      <article class="explore-card reveal-item">
+        <div class="explore-card-image">
+          <img src="shitladevi.png" alt="Shitladevi Temple with traditional architecture and peaceful surroundings" loading="lazy">
+        </div>
+        <div class="explore-card-content">
+          <h3>Shitladevi Temple</h3>
+          <div class="explore-meta">
+            <span data-explore-distance><span class="explore-meta-icon">📍</span> Calculating distance...</span>
+            <span data-explore-time><span class="explore-meta-icon">⏱</span> Calculating drive time...</span>
+          </div>
+          <p>A revered temple destination known for spiritual ambience, traditional architecture, and peaceful devotional visits.</p>
+          <button
+            type="button"
+            class="explore-view-btn"
+            data-explore-id="shitladevi-temple">
+            View More
+          </button>
+        </div>
+      </article>
+
+      <article class="explore-card reveal-item">
+        <div class="explore-card-image">
+          <img src="kelva fort.jpg" alt="Kelva Fort with coastal heritage walls and scenic surroundings" loading="lazy">
+        </div>
+        <div class="explore-card-content">
+          <h3>Kelva Fort</h3>
+          <div class="explore-meta">
+            <span data-explore-distance><span class="explore-meta-icon">📍</span> Calculating distance...</span>
+            <span data-explore-time><span class="explore-meta-icon">⏱</span> Calculating drive time...</span>
+          </div>
+          <p>A coastal heritage fort known for old fort walls, sea-facing surroundings, and scenic historical exploration near Kelva.</p>
+          <button
+            type="button"
+            class="explore-view-btn"
+            data-explore-id="kelva-fort">
+            View More
+          </button>
+        </div>
+      </article>
+
+      <article class="explore-card reveal-item">
+        <div class="explore-card-image">
+          <img src="aashapuri 1.jpg" alt="Aashapuri Devi Mandir with traditional temple structure and spiritual surroundings" loading="lazy">
+        </div>
+        <div class="explore-card-content">
+          <h3>Aashapuri Devi Mandir</h3>
+          <div class="explore-meta">
+            <span data-explore-distance><span class="explore-meta-icon">📍</span> Calculating distance...</span>
+            <span data-explore-time><span class="explore-meta-icon">⏱</span> Calculating drive time...</span>
+          </div>
+          <p>A revered local mandir known for peaceful darshan, devotional ambience, and traditional spiritual atmosphere.</p>
+          <button
+            type="button"
+            class="explore-view-btn"
+            data-explore-id="aashapuri-devi-mandir">
+            View More
+          </button>
+        </div>
+      </article>
+
+      <article class="explore-card reveal-item">
+        <div class="explore-card-image">
+          <img src="kelva dam.png" alt="Kelva Dam with calm waters and surrounding greenery" loading="lazy">
+        </div>
+        <div class="explore-card-content">
+          <h3>Kelva Dam</h3>
+          <div class="explore-meta">
+            <span data-explore-distance><span class="explore-meta-icon">📍</span> Calculating distance...</span>
+            <span data-explore-time><span class="explore-meta-icon">⏱</span> Calculating drive time...</span>
+          </div>
+          <p>A scenic water reservoir known for peaceful surroundings, nature views, and relaxed short outings near Kelva.</p>
+          <button
+            type="button"
+            class="explore-view-btn"
+            data-explore-id="kelva-dam">
+            View More
+          </button>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- AMENITIES -->
+  <section class="amenities reveal">
+    <div class="section-header">
+      <h2>Resort Essentials</h2>
+      <p>Everything required for a smooth, comfortable, and memorable stay.</p>
+    </div>
+
+    <div class="amenities-grid">
+      <div class="amenity-card reveal-item">Comfortable Premium Rooms</div>
+      <div class="amenity-card reveal-item">Wedding & Event Support</div>
+      <div class="amenity-card reveal-item">Farmstay Atmosphere</div>
+      <div class="amenity-card reveal-item">All-Inclusive Activities</div>
+      <div class="amenity-card reveal-item">Family-Friendly Open Spaces</div>
+      <div class="amenity-card reveal-item">Group Stay Accommodation</div>
+      <div class="amenity-card reveal-item">Fast WhatsApp Assistance</div>
+      <div class="amenity-card reveal-item">Easy Access from Mumbai Region</div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials reveal">
+    <div class="section-header">
+      <h2>What Guests Feel at Grovian</h2>
+      <p>Real stories that reflect comfort, hospitality, and memorable celebrations.</p>
+    </div>
+
+    <div class="testimonial-cards">
+      <article class="testimonial reveal-item">
+        <div class="rating">★★★★★</div>
+        <p>“Peaceful location, beautiful cottages, and excellent hospitality. Perfect weekend escape from Mumbai.”</p>
+        <h4>— Rahul Patil</h4>
+      </article>
+
+      <article class="testimonial reveal-item">
+        <div class="rating">★★★★★</div>
+        <p>“All activities included was a major plus. Very clean resort and great for family stay with kids.”</p>
+        <h4>— Sneha Kulkarni</h4>
+      </article>
+
+      <article class="testimonial reveal-item">
+        <div class="rating">★★★★★</div>
+        <p>“We shortlisted it for pre-wedding and loved the natural backdrops. Team support was very smooth.”</p>
+        <h4>— Aditi & Nikhil</h4>
+      </article>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq reveal" id="faq">
+    <div class="faq-wrap">
+      <div class="faq-intro">
+        <h2>Booking & Stay FAQs</h2>
+        <p>Quick answers to help you plan your one-night stay, shoot, or wedding enquiry.</p>
+      </div>
+
+      <div class="faq-list">
+        <details open>
+          <summary>Do you offer one-day and one-night stay options?</summary>
+          <p>Yes. We offer flexible plans including day escapes and one-night stays based on availability.</p>
+        </details>
+
+        <details>
+          <summary>Can we book the resort for pre-wedding shoots?</summary>
+          <p>Yes. Pre-wedding shoot enquiries are available with customizable timing and stay options.</p>
+        </details>
+
+        <details>
+          <summary>Is Grovian suitable for destination weddings?</summary>
+          <p>Yes. The resort is designed for intimate destination weddings with stay and event support.</p>
+        </details>
+
+        <details>
+          <summary>Are activities included in package pricing?</summary>
+          <p>Core activities are included for in-house guests. Final package inclusions are shared at booking.</p>
+        </details>
+
+        <details>
+          <summary>How can I confirm availability quickly?</summary>
+          <p>You can check availability through the booking page or contact us directly on WhatsApp.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact reveal" id="contact">
+    <div class="contact-container">
+      <div class="contact-info">
+        <h2>Plan Your Stay at Grovian</h2>
+        <p>Vilangi, Saphale, Maharashtra</p>
+
+        <ul>
+          <li><strong>Phone:</strong> +91 74988 03079</li>
+          <li><strong>WhatsApp:</strong> +91 74988 03079</li>
+          <li><strong>Email:</strong> grovianresort@gmail.com</li>
+        </ul>
+
+        <div class="contact-actions">
+          <a href="booking.html" class="btn-primary">Book Your Stay</a>
+          <a href="https://wa.me/917498803079" class="btn-outline" target="_blank" rel="noopener">WhatsApp Us</a>
+          <a href="https://www.google.com/maps?q=19.58825,72.75667" class="btn-soft" target="_blank" rel="noopener">Get Directions</a>
+        </div>
+      </div>
+
+      <div class="map">
+        <iframe
+          src="https://www.google.com/maps?q=19.58825,72.75667&z=15&output=embed"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div>
+        <h3>Grovian Resort</h3>
+        <p>Nature-luxury farmstay for one-night escapes, destination weddings, and unforgettable celebrations.</p>
+      </div>
+
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="#accommodation">Accommodation</a></li>
+          <li><a href="#wedding">Weddings</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Contact</h4>
+        <p>Vilangi, Saphale</p>
+        <p>+91 74988 03079</p>
+        <p>grovianresort@gmail.com</p>
+      </div>
+    </div>
+
+    <p class="copyright">© 2026 Grovian Resort. All rights reserved.</p>
+  </footer>
+
+  <!-- FLOATING CTAs -->
+  <div class="floating-cta">
+    <a href="booking.html" class="floating-book">Book Stay</a>
+    <a href="https://wa.me/917498803079" target="_blank" rel="noopener" class="floating-wa">WhatsApp</a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

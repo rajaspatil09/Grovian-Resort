@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Book Your Stay | Grovian Resort</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <section class="booking-page booking-bg">
+    <div class="booking-box">
+        <p style="letter-spacing:2px;font-size:11px;color:#777;">
+          WELCOME TO GROVIAN
+        </p>
+
+
+      <h2>Book Your Stay</h2>
+      <p class="subtitle">Delux Room · All activities included</p>
+
+      <div class="form-group">
+        <label>Check-in Date</label>
+        <input type="date" id="checkin">
+      </div>
+
+      <div class="form-group">
+        <label>Check-out Date</label>
+        <input type="date" id="checkout">
+      </div>
+
+     <div class="form-group">
+  <label>Number of Guests</label>
+
+  <select id="guests">
+  <option value="1">1 Guest</option>
+  <option value="2" selected>2 Guests</option>
+  <option value="3">3 Guests</option>
+  <option value="4">4 Guests</option>
+  <option value="5">5 Guests</option>
+  <option value="6">6 Guests</option>
+  <option value="7">7 Guests</option>
+  <option value="8">8 Guests</option>
+  <option value="9">9 Guests</option>
+  <option value="10">10 Guests</option>
+  <option value="11">11 Guests</option>
+  <option value="12">12 Guests</option>
+  <option value="13">13 Guests</option>
+  <option value="14">14 Guests</option>
+  <option value="15">15 Guests</option>
+  <option value="16">16 Guests</option>
+  <option value="17">17 Guests</option>
+  <option value="18">18 Guests</option>
+</select>
+
+<small style="color:#666;font-size:12px;">
+  Single guest is charged at double occupancy base price
+</small>
+
+</div>
+
+
+      <div class="price-summary">
+        <p>Total Price:</p>
+        <h3 id="totalPrice">₹3500</h3>
+      </div>
+
+      <a href="https://wa.me/917498803079" target="_blank" rel="noopener" class="booking-btn">Proceed to Book</a>
+
+    </div>
+  </section>
+
+  <script src="booking.js"></script>
+</body>
+</html>

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Explore Nearby | Grovian Resort</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore nearby destinations around Grovian Resort with photos, details, and location map.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="bg-grain" aria-hidden="true"></div>
+
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html#home" class="logo">Grovian</a>
+
+      <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-links" id="primary-navigation">
+        <li><a href="index.html#home">Home</a></li>
+        <li><a href="index.html#explore" class="active">Explore</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+
+      <a href="booking.html" class="btn-primary nav-book">Book Now</a>
+    </div>
+  </nav>
+
+  <main class="explore-details-page reveal">
+    <section class="explore-details-header">
+      <div class="explore-details-header-inner">
+        <a href="index.html#explore" class="explore-back-btn">← Back to Explore Nearby</a>
+        <p class="eyebrow">Nearby Discovery</p>
+        <h1 id="exploreTitle">Nearby Destination</h1>
+        <p id="exploreDescription">
+          Discover a scenic destination close to Grovian Resort, ideal for short drives, nature moments, and memorable photos.
+        </p>
+      </div>
+    </section>
+
+    <section class="explore-details-gallery reveal">
+      <div class="explore-details-gallery-grid" id="exploreGallery">
+        <img src="gallery3.jpg" alt="Nearby destination view" loading="lazy">
+        <img src="gallery4.jpg" alt="Nearby destination landscape" loading="lazy">
+        <img src="gallery1.jpg" alt="Nearby destination scenic corner" loading="lazy">
+      </div>
+    </section>
+
+    <section class="explore-location reveal">
+      <div class="explore-location-wrap">
+        <div class="explore-location-info">
+          <h2>Location</h2>
+          <p id="exploreAddress">Saphale region, Maharashtra</p>
+          <div class="explore-location-meta">
+            <span id="exploreDistance">Distance unavailable</span>
+            <span id="exploreTime">Travel time unavailable</span>
+          </div>
+        </div>
+        <div class="explore-location-map">
+          <iframe
+            id="exploreMap"
+            src="https://www.google.com/maps?q=Saphale,Maharashtra&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Destination map">
+          </iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div>
+        <h3>Grovian Resort</h3>
+        <p>Nature-luxury farmstay for one-night escapes, destination weddings, and unforgettable celebrations.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="index.html#explore">Explore Nearby</a></li>
+          <li><a href="index.html#gallery">Gallery</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p>Vilangi, Saphale</p>
+        <p>+91 74988 03079</p>
+        <p>grovianresort@gmail.com</p>
+      </div>
+    </div>
+    <p class="copyright">© 2026 Grovian Resort. All rights reserved.</p>
+  </footer>
+
+  <script>
+    (function () {
+      const destinations = {
+        "bhavangad-fort": {
+          title: "Bhavangad Fort",
+          description:
+            "Bhavangad Fort is a heritage hill destination known for rugged stone pathways, elevated viewpoints, and historic fort remains. Guests can enjoy panoramic scenery, textured architecture, and scenic photography spots during a relaxed walk. Early morning and late afternoon are ideal for pleasant weather and clear views. Comfortable footwear is recommended for fort trails.",
+          address: "Bhavangad Fort Region, Near Saphale, Maharashtra",
+          distance: "1.9 km away",
+          time: "Approx. 3 mins drive",
+          mapQuery: "Bhavangad Fort Saphale Maharashtra",
+          images: ["bhavangad fort 1.jpeg", "bhavangad fort 2.jpeg", "bhavangad fort 3.jpeg"]
+        },
+        "sunrise-hill-point": {
+          title: "Sunrise Hill Point",
+          description:
+            "Sunrise Hill Point offers elevated views with soft golden light and open valley landscapes. It is a popular early-morning destination for couples and families staying at Grovian Resort. The route is short and suitable for quick sunrise visits with light walking. Cool breeze and wide viewpoints create a peaceful mood for photos and quiet moments. This spot is best visited early in the day.",
+          address: "Sunrise Hill Viewpoint, Near Saphale, Maharashtra",
+          distance: "12 km away",
+          time: "25 mins drive",
+          mapQuery: "Sunrise Hill Point Saphale Maharashtra",
+          images: ["gallery4.jpg", "gallery2.jpg", "gallery5.jpg"]
+        },
+        "bahu-fort-ruins": {
+          title: "Bahu Fort Ruins",
+          description:
+            "Bahu Fort Ruins is a heritage-style destination with old stone remains and local historical charm. The site offers elevated visual points and textured architecture that is excellent for storytelling photography. Guests can enjoy a slow-paced walk while exploring remnants of fort walls and open surroundings. It makes a strong half-day excursion for travelers interested in history and culture. Comfortable walking footwear is recommended.",
+          address: "Bahu Fort Heritage Zone, Palghar District, Maharashtra",
+          distance: "18 km away",
+          time: "35 mins drive",
+          mapQuery: "Bahu Fort Ruins Maharashtra",
+          images: ["gallery6.jpg", "gallery1.jpg", "gallery3.jpg"]
+        },
+        "kelwa-beach": {
+          title: "Kelwa Beach",
+          description:
+            "Kelwa Beach is a wide coastal stretch known for laid-back evenings and sunset views. It is one of the most enjoyable nearby drives for guests who want sea breeze and open horizon visuals. Families can spend time on slow walks, local snacks, and relaxed beachside moments. The atmosphere is casual and ideal for short photo sessions before returning to the resort. Late afternoon is the most recommended visit time.",
+          address: "Kelwa Beach, Palghar, Maharashtra",
+          distance: "4.9 km away",
+          time: "10 mins drive",
+          mapQuery: "Kelwa Beach Palghar Maharashtra",
+          images: ["kelva beach.png", "kelva beach 2.jpg", "kelva beach 3.jpg"]
+        },
+        "kelva-fort": {
+          title: "Kelva Fort",
+          description:
+            "Kelva Fort is a coastal heritage site known for weathered fort walls, historical charm, and open sea-facing surroundings. Guests can enjoy a short scenic drive and explore the old structure while taking in breezy viewpoints and local landscape textures. It is a great nearby destination for families and couples interested in culture, history, and photography. Early morning and late afternoon offer the most comfortable weather and light. Comfortable footwear is recommended for fort exploration.",
+          address: "Kelva Fort, Palghar District, Maharashtra",
+          distance: "4.2 km away",
+          time: "10 mins drive",
+          mapQuery: "Kelva Fort Palghar Maharashtra",
+          images: ["kelva fort 1.jpg", "kelva fort 2.jpg", "kelva fort 3.jpg"]
+        },
+        "aashapuri-devi-mandir": {
+          title: "Aashapuri Devi Mandir",
+          description:
+            "Aashapuri Devi Mandir is a revered spiritual destination near Grovian Resort, known for its devotional ambience and traditional temple setting. Guests can enjoy peaceful darshan, temple rituals, and quiet moments in a calm local environment. The mandir is suitable for families and couples seeking a short, meaningful cultural visit. Its close distance makes it ideal for a quick spiritual outing during the stay. Morning and evening visits are recommended for a serene experience.",
+          address: "Aashapuri Devi Mandir, Saphale Region, Maharashtra",
+          distance: "1.7 km away",
+          time: "5 mins drive",
+          mapQuery: "Aashapuri Devi Mandir Saphale Maharashtra",
+          images: ["aashapuri 1.jpg", "aashpuri 2.jpg", "aashapuri 3.webp"]
+        },
+        "kelva-dam": {
+          title: "Kelva Dam",
+          description:
+            "Kelva Dam is a scenic water reservoir destination with calm surroundings, open natural views, and relaxing atmosphere. Guests can enjoy a short drive from Grovian Resort for peaceful walks, fresh air, and casual photography near the water body. The location is ideal for families and couples seeking a gentle outing without long travel. Morning and late afternoon provide pleasant weather and softer light for visits. It is a convenient nature stop for a quiet break during your stay.",
+          address: "Kelva Dam Area, Palghar District, Maharashtra",
+          distance: "11.5 km away",
+          time: "30 mins drive",
+          mapQuery: "Kelva Dam Palghar Maharashtra",
+          images: ["kelva dam 1.webp", "kelva dam 2.webp", "kelva dam 3.jpg"]
+        },
+        "shitladevi-temple": {
+          title: "Shitladevi Temple",
+          description:
+            "Shitladevi Temple is a revered spiritual destination known for traditional architecture and a peaceful devotional atmosphere. Guests can experience calm surroundings, local faith traditions, and a serene temple visit during a short drive from Grovian Resort. The temple area is ideal for families and couples seeking a quiet cultural outing with meaningful moments. Mornings and early evenings are especially pleasant for darshan and reflection. Respectful attire is recommended during temple visits.",
+          address: "Shri Shitladevi Temple, Kelwe",
+          distance: "4.9 km away",
+          time: "10 mins drive",
+          mapEmbedSrc: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4267.261554679217!2d72.72936007573475!3d19.613522481704937!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be70267976eabb5%3A0xab113dd33232f9f3!2sShri%20Shitladevi%20Temple%2C%20Kelwe!5e1!3m2!1sen!2sin!4v1775414161459!5m2!1sen!2sin",
+          images: ["shitladevi 1.jpg", "shitkadevi 2.png", "shitladevi 3.png"]
+        },
+        "shiv-heritage-temple": {
+          title: "Shiv Heritage Temple",
+          description:
+            "Shiv Heritage Temple is a serene spiritual stop with traditional architecture and calming ambience. The place is ideal for guests seeking a quiet cultural visit close to Grovian Resort. Carved stone details and temple surroundings make it visually rich yet peaceful for short stays. It is suitable for family visits and reflective moments in a clean, devotional atmosphere. Morning hours are best for a tranquil experience.",
+          address: "Shiv Heritage Temple Area, Saphale, Maharashtra",
+          distance: "6 km away",
+          time: "15 mins drive",
+          mapQuery: "Shiv Temple Saphale Maharashtra",
+          images: ["about.jpg", "gallery3.jpg", "gallery6.jpg"]
+        },
+        "pine-lake-point": {
+          title: "Pine Lake Point",
+          description:
+            "Pine Lake Point is a calm water-side destination with reflective views and soft natural light. The location is ideal for relaxed family picnics, couple photos, and peaceful breaks in greenery. It offers a gentle atmosphere where guests can unwind without heavy activity. The route is short and convenient for a quick scenic outing from the resort. Late morning and early evening are both pleasant times to visit.",
+          address: "Pine Lake Point Region, Near Saphale, Maharashtra",
+          distance: "10 km away",
+          time: "22 mins drive",
+          mapQuery: "Pine Lake Point Saphale Maharashtra",
+          images: ["gallery2.jpg", "gallery3.jpg", "gallery4.jpg"]
+        }
+      };
+
+      const params = new URLSearchParams(window.location.search);
+      const id = params.get("id") || "";
+      const place = destinations[id] || destinations["bhavangad-fort"];
+
+      const titleEl = document.getElementById("exploreTitle");
+      const descriptionEl = document.getElementById("exploreDescription");
+      const addressEl = document.getElementById("exploreAddress");
+      const distanceEl = document.getElementById("exploreDistance");
+      const timeEl = document.getElementById("exploreTime");
+      const mapEl = document.getElementById("exploreMap");
+      const galleryEl = document.getElementById("exploreGallery");
+
+      if (titleEl) titleEl.textContent = place.title;
+      if (descriptionEl) descriptionEl.textContent = place.description;
+      if (addressEl) addressEl.textContent = place.address;
+      if (distanceEl) distanceEl.textContent = place.distance;
+      if (timeEl) timeEl.textContent = place.time;
+      if (mapEl) {
+        mapEl.src = place.mapEmbedSrc || `https://www.google.com/maps?q=${encodeURIComponent(place.mapQuery)}&output=embed`;
+      }
+
+      if (galleryEl) {
+        galleryEl.innerHTML = place.images
+          .map((image, index) => `<img src="${image}" alt="${place.title} photo ${index + 1}" loading="lazy">`)
+          .join("");
+      }
+
+      document.title = `${place.title} | Explore Nearby | Grovian Resort`;
+    })();
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>
