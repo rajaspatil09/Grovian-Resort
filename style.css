@@ -2169,40 +2169,6 @@ section {
     --nav-height: 76px;
   }
 
-  .menu-toggle {
-    display: flex;
-  }
-
-  .nav-container .nav-links {
-    position: absolute;
-    top: calc(100% + 10px);
-    left: 14px;
-    right: 14px;
-    padding: 14px;
-    border-radius: 16px;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    background: rgba(9, 17, 13, 0.94);
-    backdrop-filter: blur(10px);
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
-    opacity: 0;
-    transform: translateY(-8px);
-    pointer-events: none;
-    transition: opacity 0.28s ease, transform 0.28s ease;
-  }
-
-  .nav-container .nav-links.open {
-    opacity: 1;
-    transform: translateY(0);
-    pointer-events: auto;
-  }
-
-  .nav-book {
-    display: none;
-  }
-
   .hero-points {
     grid-template-columns: 1fr;
     max-width: 320px;
@@ -2237,22 +2203,127 @@ section {
 
 }
 
-@media (max-width: 760px) {
+@media (max-width: 768px) {
   :root {
     --nav-height: 72px;
   }
 
-  .hero-video {
-    min-height: 100vh;
-    height: 100vh;
+  body,
+  section {
+    overflow-x: hidden;
   }
 
-  .hero {
-    min-height: 82vh;
+  .navbar {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  .nav-container .nav-links {
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 12px;
+    right: 12px;
+    padding: 14px;
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: rgba(9, 17, 13, 0.94);
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    opacity: 0;
+    transform: translateY(-8px);
+    pointer-events: none;
+    transition: opacity 0.28s ease, transform 0.28s ease;
+    max-height: calc(100vh - var(--nav-height) - 24px);
+    overflow-y: auto;
+  }
+
+  .nav-container .nav-links.open {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+  }
+
+  .nav-book {
+    display: none;
+  }
+
+  .hero-video {
+    min-height: 65vh;
+    height: 65vh;
+    max-height: 70vh;
+    background: #060b08;
+  }
+
+  .hero-video video {
+    object-fit: contain;
+    object-position: center center;
+    background: #060b08;
+  }
+
+  .video-overlay {
+    background:
+      linear-gradient(180deg, rgba(0, 0, 0, 0.34) 0%, rgba(0, 0, 0, 0.46) 64%, rgba(0, 0, 0, 0.56) 100%),
+      radial-gradient(circle at 50% 26%, rgba(178, 233, 196, 0.14), transparent 52%);
   }
 
   .nature-badges {
-    top: calc(var(--nav-height) + 14px);
+    top: calc(var(--nav-height) + 10px);
+    left: 50%;
+    transform: translateX(-50%);
+    justify-content: center;
+    width: calc(100% - 24px);
+  }
+
+  .nature-badges span {
+    text-align: center;
+    max-width: 100%;
+  }
+
+  .video-hint {
+    bottom: 14px;
+    text-align: center;
+  }
+
+  .hero {
+    min-height: 78vh;
+  }
+
+  .hero-content {
+    padding: clamp(100px, 14vh, 120px) 14px 64px;
+    text-align: center;
+  }
+
+  .hero h1 {
+    font-size: clamp(30px, 8.2vw, 42px);
+  }
+
+  .hero p {
+    font-size: clamp(14px, 3.7vw, 17px);
+  }
+
+  .section-header h2,
+  .about-text h2,
+  .wedding-text h2,
+  .prewedding-text h2,
+  .contact-info h2,
+  .faq-intro h2,
+  .room-container h2,
+  .page-header h1 {
+    font-size: clamp(30px, 8vw, 44px);
+    line-height: 1.12;
+  }
+
+  .hero-buttons,
+  .contact-actions {
+    flex-direction: column;
+    gap: 12px;
   }
 
   .booking-bar {
@@ -2273,20 +2344,40 @@ section {
     grid-template-columns: 1fr;
   }
 
+  .wedding,
+  .about,
+  .cottages,
+  .packages,
+  .activities,
+  .gallery,
+  .explore-nearby,
+  .amenities,
+  .testimonials,
+  .faq,
+  .contact,
+  .category-gallery,
+  .page-header,
+  .room-gallery,
+  .room-details {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+
   .wedding {
-    padding: 90px 16px;
+    padding-top: 88px;
+    padding-bottom: 88px;
   }
 
   .wedding-text {
-    padding: 24px 18px;
+    padding: 22px 16px;
   }
 
   .wedding-text h2 {
-    margin-bottom: 16px;
+    margin-bottom: 14px;
   }
 
   .wedding-features {
-    margin: 20px 0 16px;
+    margin: 18px 0 14px;
     padding: 12px 14px;
   }
 
@@ -2294,10 +2385,27 @@ section {
     padding: 13px 12px 13px 14px;
   }
 
+  img {
+    width: 100%;
+    height: auto;
+  }
+
   .gallery-grid img,
   .category-gallery-grid img,
-  .explore-details-gallery-grid img {
-    height: 230px;
+  .explore-details-gallery-grid img,
+  .accommodation-image img,
+  .prewedding-gallery img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .btn-primary,
+  .btn-outline,
+  .btn-soft,
+  .booking-btn {
+    width: 100%;
+    min-height: 46px;
   }
 
   .floating-cta {
@@ -2311,40 +2419,122 @@ section {
     min-width: 0;
   }
 
-  .btn-primary,
-  .btn-outline {
+  .explore-nearby .section-header {
+    margin-bottom: 30px;
+  }
+
+  .explore-nearby-grid {
+    gap: 16px;
+  }
+
+  .explore-card {
+    border-radius: 18px;
+  }
+
+  .explore-card-image {
+    height: 220px;
+  }
+
+  .explore-card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .explore-card-content {
+    padding: 16px 14px 18px;
+  }
+
+  .explore-card-content h3 {
+    font-size: clamp(26px, 7.6vw, 34px);
+    line-height: 1.14;
+  }
+
+  .explore-card-content p {
+    min-height: 0;
+    margin-bottom: 12px;
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  .explore-meta {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 7px;
+    margin-bottom: 12px;
+  }
+
+  .explore-meta span {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .explore-view-btn {
+    width: 100%;
+    min-height: 44px;
+  }
+
+  .explore-details-header,
+  .explore-details-gallery,
+  .explore-location {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+
+  .explore-details-header h1 {
+    font-size: clamp(32px, 8vw, 42px);
+    line-height: 1.12;
+  }
+
+  .explore-details-header p {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  .explore-location-wrap {
+    gap: 14px;
+  }
+
+  .explore-location-info {
+    padding: 18px 14px;
+  }
+
+  .explore-location-meta {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .explore-location-meta span {
     width: 100%;
   }
 
-  .contact-actions .btn-primary,
-  .contact-actions .btn-outline,
-  .contact-actions .btn-soft {
-    width: auto;
+  .explore-location-map {
+    min-height: 280px;
   }
 }
 
-@media (max-width: 520px) {
-  .navbar {
-    padding-left: 12px;
-    padding-right: 12px;
+@media (max-width: 480px) {
+  .logo {
+    font-size: 30px;
   }
 
-  .logo {
-    font-size: 32px;
+  .hero-video {
+    min-height: 60vh;
+    height: 60vh;
   }
 
   .hero-content {
-    padding-left: 14px;
-    padding-right: 14px;
-    padding-bottom: 74px;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-bottom: 56px;
+  }
+
+  .hero h1 {
+    font-size: clamp(28px, 9vw, 36px);
   }
 
   .hero-buttons {
     width: 100%;
-  }
-
-  .contact-actions {
-    flex-direction: column;
   }
 
   .contact-actions .btn-primary,
@@ -2354,30 +2544,46 @@ section {
   }
 
   .booking-box {
-    padding: 28px 20px;
+    padding: 24px 16px;
   }
 
-  .explore-nearby-grid {
-    display: grid;
-    grid-auto-flow: column;
-    grid-auto-columns: minmax(84%, 1fr);
-    overflow-x: auto;
-    overscroll-behavior-x: contain;
-    scroll-snap-type: x mandatory;
-    gap: 14px;
-    padding-bottom: 6px;
+  .explore-nearby {
+    padding-top: 82px;
+    padding-bottom: 82px;
   }
 
-  .explore-card {
-    scroll-snap-align: start;
+  .explore-card-image {
+    height: 200px;
+  }
+
+  .explore-card-content {
+    padding: 14px 12px 16px;
+  }
+
+  .explore-card-content h3 {
+    font-size: clamp(24px, 8.2vw, 30px);
   }
 
   .explore-card-content p {
     min-height: 0;
+    font-size: 13.5px;
+  }
+
+  .explore-meta span {
+    font-size: 11px;
+    padding: 7px 9px;
+  }
+
+  .explore-details-header-inner {
+    padding: 16px 12px;
+  }
+
+  .explore-location-map {
+    min-height: 240px;
   }
 
   .explore-modal-panel img {
-    height: 210px;
+    height: auto;
   }
 }
 
