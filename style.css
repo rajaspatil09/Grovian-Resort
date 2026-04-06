@@ -2436,10 +2436,10 @@ section {
   .explore-nearby-grid {
     grid-template-columns: 1fr;
     gap: 16px;
-    overflow-x: hidden;
-    overflow-y: visible;
+    overflow: visible;
     scroll-snap-type: none;
-    -webkit-overflow-scrolling: auto;
+    -webkit-overflow-scrolling: touch;
+    touch-action: pan-y;
   }
 
   .explore-card {
@@ -2581,8 +2581,9 @@ section {
 
   .explore-nearby-grid {
     grid-template-columns: 1fr;
-    overflow-x: hidden;
+    overflow: visible;
     scroll-snap-type: none;
+    touch-action: pan-y;
   }
 
   .explore-card-image {
